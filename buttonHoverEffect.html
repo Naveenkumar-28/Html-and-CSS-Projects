@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 600px;
+            background: rgb(237, 239, 241);
+            border: 1px solid;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn_5,.btn_6,.btn_7{
+              border: none;
+              background-color: #f96808;
+              color: white;
+              height: 40px;
+              width: 80px;
+              border-radius: 5px;
+              font-weight: bold;
+              box-shadow: 3px 3px 8px rgba(10, 10, 10, 0.418),-4px -4px 8px #a6a3a39d;
+        }
+        .btn_6{
+            background: #ffff;
+            color: black;
+        }
+        .btn_7{
+            background-color: #0494fa;
+        }
+        .btn_5:hover{
+            box-shadow: -3px -3px 8px rgba(10, 10, 10, 0.418),4px 4px 8px #a6a3a39d;
+        }
+        .btn_5:active{
+            box-shadow: inset 2px 2px 15px gray,-2px -2px 15px rgb(249, 248, 248) ;
+        }
+        .btn_6:hover{
+            background-color: #f6efef;
+        }
+        .btn_7:hover{
+            opacity: 0.9;
+            box-shadow: 2px 2px 15px rgba(29, 27, 27, 0.71),-2px -2px 15px rgb(218, 216, 216);
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn_5">Button 5</button>
+        <button class="btn_6">Button 6</button>
+        <button class="btn_7">Button 7</button>
+    </div>
+</body>
+</html>

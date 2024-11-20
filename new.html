@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS inline & intanel</title>
+    <h1 style="padding: 20px;">Application Form</h1>
+    <style>
+    *{
+        padding: 0;
+        border: 0;
+margin: 0;    
+    }
+body{
+    background-color:mediumseagreen;text-align: center;padding: 100px;
+}
+button{background-color: orange;padding-left: 30px;padding-right: 30px;}
+#FirstName{
+    color: blue;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+    <span>
+    <label for="FirstName">First Name :</label>
+    <input type="text" id="FirstName" placeholder="hi">
+</span>
+    <span>
+    <label for="Last Name">Last Name :</label>
+    <input type="text" id="Last Name">
+</span>
+</div>
+<br>
+    <div>
+    <span>
+    <label for="Date of birth">Date of birth :</label>
+    <input type="date">
+</span>
+    <span>
+    <label for="Age">Age :</label>
+    <input type="number" id="Age">
+</span>
+</div>
+<br>
+    <div>
+    <span>
+    <label for="Gender">Gender :</label>
+    <Select name="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </Select>
+</span>
+    <span>
+    <label for="Email">Email :</label>
+    <input type="email" id="Email">
+</span>
+</div>
+<br>
+<div>
+    <span>
+    <label for="Positions">Positions Available :</label>
+<input type="radio"><label for="junior Developer">junior Developer</label>
+<input type="radio"><label for="Mid-level Developer">Mid-level Developer</label>
+<input type="radio"><label for="Senior Developer">Senior Developer</label>
+</span>
+</div>
+<br>
+<div>
+    <span>
+    <label for="language">Programming languages :</label>
+<input type="radio"><label for="JAVA">JAVA</label>
+<input type="radio"><label for="JAVAScrpt">JAVAScrpt</label>
+<input type="radio"><label for="Python">Python</label>
+</span>
+</div>
+<br>
+<div>
+    <span>
+        <label for="Password">Password :</label>
+        <input type="password" id="Password">
+    </span>
+    <span>
+        <label for="confrom Password">Confrom Password :</label>
+        <input type="password" id="confrom Password">
+    </span>
+</div>
+<br>
+<div>
+    <span><button type="submit">Submit</button></span>
+    <span><button type="reset">Reset</button></span>
+</div>
+</body>
+</html>

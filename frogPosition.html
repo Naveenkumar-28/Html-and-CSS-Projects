@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 500px;
+            width: 700px;
+            background-color: #fbf39c;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .frogContainer {
+            height: 350px;
+            width: 300px;
+            position: relative;
+
+        }
+
+        .frogBody {
+            height: 80%;
+            width: 55%;
+            background-color: #8ebb00;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            bottom: 0;
+            left: 22%;
+            z-index: 3;
+
+            .innerBody {
+                height: 55%;
+                width: 60%;
+                background: #c1d118;
+                position: absolute;
+                bottom: 0;
+                left: 20.5%;
+                border-radius: 50% 50% 0 0;
+
+            }
+        }
+
+        .frogHead,
+        .frogHead2 {
+            width: 240px;
+            height: 192.5px;
+            background-color: #8ebb00;
+            position: absolute;
+            border-radius: 50%;
+            left: 9.5%;
+            z-index: 3;
+        }
+
+        .frogHead {
+            top: 35%;
+        }
+
+        .frogHead2 {
+            top: -45%;
+            z-index: 4;
+        }
+
+        .leg {
+            height: 120px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: #467a27;
+            position: absolute;
+        }
+
+        .legLeft {
+            bottom: 2%;
+            rotate: 340deg;
+            left: 9%;
+
+        }
+
+        .legRight {
+            bottom: 2%;
+            rotate: 20deg;
+            right: 9%;
+
+        }
+
+        .foot {
+            height: 60px;
+            width: 60px;
+            background-color: #467a27;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .footRight {
+            right: 13%;
+            bottom: -15%;
+        }
+
+        .footLeft {
+            left: 13%;
+            bottom: -15%;
+        }
+
+        .eye {
+            height: 80px;
+            width: 80px;
+            background: radial-gradient(#204106 0% 35%, #fefefb 35% 55%, #8dba02 55% 100%);
+            border-radius: 50%;
+            position: absolute;
+
+        }
+
+        .rightEye {
+            right: 12%;
+            top: -15%;
+        }
+
+        .LeftEye {
+            left: 12%;
+            top: -15%;
+        }
+
+        .lip {
+            height: 15px;
+            width: 70%;
+            border-radius: 50px;
+            background-color: #457a26;
+            position: absolute;
+            top: 36%;
+            left: 14%;
+            z-index: 99;
+        }
+
+        .headBox {
+            width: 100%;
+            height: 40%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .BodyBox {
+            height: 60%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lip1 {
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            background-color: #c1d118;
+            top: 11%;
+            left: 15%;
+            position: absolute;
+        }
+
+        .tongue {
+            height: 220px;
+            width: 13px;
+            background-color: #f37b71;
+            position: absolute;
+            rotate: 316deg;
+            z-index: 4;
+            top: -13%;
+            left: 20%;
+        }
+
+        .hand {
+            height: 45px;
+            width: 65px;
+            background-color: #8ebb00;
+            position: absolute;
+            z-index: 20;
+            bottom: 10%;
+        }
+
+        .rightHand {
+            right: 38.4%;
+            border-radius: 50% 0 50% 0;
+        }
+
+        .leftHand {
+            left: 38%;
+            border-radius: 0 50% 0 50%;
+        }
+
+        .eCircle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: black;
+            z-index: 99;
+            top: 9%;
+            right: 72%;
+        }
+
+        .wings1,
+        .wings2 {
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            background: #a2a1a1;
+            z-index: 99;
+            border-radius: 50%;
+            top: 0;
+            left: 25%;
+        }
+
+        .wings1 {
+            top: 9.6%;
+            left: 23%;
+        }
+
+        .wings2 {
+            top: 6.1%;
+            left: 25.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="eCircle"></div>
+        <div class="wings1"></div>
+        <div class="wings2"></div>
+        <div class="rightHand hand"></div>
+        <div class="leftHand hand"></div>
+        <div class="frogContainer">
+            <div class="tongue"></div>
+            <div class="lip"></div>
+            <div class="headBox">
+                <div class="frogHead">
+                    <div class="rightEye eye"></div>
+                    <div class="LeftEye eye"></div>
+
+                </div>
+            </div>
+            <div class="BodyBox">
+                <div class="frogHead2">
+                    <div class="lip1"></div>
+                </div>
+                <div class="frogBody">
+                    <div class="innerBody"></div>
+                </div>
+                <div class="legRight leg"></div>
+                <div class="legLeft leg"></div>
+                <div class="footRight foot"></div>
+                <div class="footLeft foot"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

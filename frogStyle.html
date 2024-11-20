@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Styling</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 500px;
+            width: 600px;
+            background: #293462;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .frog{
+            background: #a64942;
+            height: 280px;
+            width: 420px;
+            border-radius: 50% 50% 150px 150px;
+            overflow: hidden;
+            position: relative;
+            
+            
+        }
+        .frog1{
+            top: -116%;
+            left: -45%;
+            background: #fd5f54;
+            position: absolute;
+            height: 520px;
+            width: 800px;
+            border-radius: 50%;
+        }
+        .circle{
+            position: absolute;
+            z-index: 2;
+            background: radial-gradient(#2b335e 0% 16%,#faedc0 17% 38%,#fd5f54 40% 100%);
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+           
+        }
+        .circle1{
+            top: 10%;
+            left: 22%;
+        }
+        .circle2{
+            top: 10%;
+            right: 22%;
+        }
+        .nose{
+            position: absolute;
+            top: 48%;
+            height: 30px;
+            width: 30px;
+            background: #293462;
+            border-radius: 50%;
+        }
+        .nose1{
+            left: 43%;
+        }
+        .nose2{
+            right: 43%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="frog">
+            
+            <div class="frog1">
+                
+            </div>
+        </div>
+        <div class="circle1 circle"></div>
+        <div class="circle2 circle"></div>
+        <div class="nose1 nose"></div>
+        <div class="nose2 nose"></div>
+    </div>
+</body>
+</html>

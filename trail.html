@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+          
+            width: 500px;
+            height: 500px;
+            backdrop-filter: blur(35px);
+            border: 1px solid;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            clip-path: circle(100px);
+            background-image: url(./IMG_20220918_160413.jpg);
+            background-position: center;
+            background-repeat:no-repeat ;
+            background-size: cover;
+            /* background-image: url(./IMG_20220918_160413.jpg);
+            background-position: center;
+            background-repeat:no-repeat ;
+            background-size: cover; */
+            animation: naveen 8s linear infinite;
+         
+        }
+        @keyframes naveen {
+            0%{
+                clip-path: circle(100%);
+            }
+            10%{
+                clip-path: circle(125px);
+            }
+            20%{
+                clip-path: circle(125px at 0);
+            }
+            40%{
+                clip-path: circle(125px at 100% 50%);
+            }
+            60%{
+                clip-path: circle(125px at 50% 100%);
+            }
+            80%{
+                clip-path: circle(125px at 50% 50%);
+            }
+            100%{
+                clip-path: circle(100%);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="box"></div>
+    </div>
+</body>
+</html>

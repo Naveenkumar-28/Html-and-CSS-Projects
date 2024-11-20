@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+        .RadialGradient{
+            display: inline-block; 
+            padding: 10px;
+            .box{
+                height: 300px;
+                width: 300px;
+                border: 1px solid ;
+            }
+            .RadialBox1{
+                background: radial-gradient(red 0% 5%,blue 18% 20%,red 20% 25%,blue 38% 40%,red 40% 45%,blue 58% 60%,red 60% 65%,blue 78% 80%,red 80% 85%,blue 98% 100%);
+            }
+            .RadialBox2{
+                background: radial-gradient(white 0% 1%,rgb(19, 232, 182) 10% 12%,rgb(197, 10, 234) 15% 25% ,yellow 30% 42%,red 48% 60%,white 70% 100% );
+            }
+            .RadialBox3{
+                background: radial-gradient(blue 0% 5%, red 50% 100%);
+            }
+            .RadialBox4{
+                background: radial-gradient(blue 0% 5%, red 95% 100%);
+            }
+         }
+        p{
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+        .linear{
+            height: 400px;
+            width: 600px;
+            border: 1px solid;
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+            .linearBox{
+                height: 100%;
+                width: 30%;
+            }
+            .box1{
+                background:linear-gradient(rgb(255, 0, 128) 0% 20% ,skyblue 80% 100%) ;
+            }
+            .box2{
+                background:linear-gradient(skyblue 0% 20%,orange 80% 100% ) ;
+            }
+            .box3{
+               background: linear-gradient(rgb(255, 0, 128) 0% 20% ,rgb(38, 223, 38) 80% 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Radial gradient</p>
+        <div class="RadialGradient">
+            <div class="RadialBox1 box"></div>
+        </div>
+        <div class="RadialGradient">
+            <div class="RadialBox2 box"></div>
+        </div>
+        <div class="RadialGradient">
+            <div class="RadialBox3 box"></div>
+        </div>
+        <div class="RadialGradient">
+            <div class="RadialBox4 box"></div>
+        </div>
+  
+    </div>
+        <div class="container">
+            <p>Linear-Gradient</p>
+            <div class="linear">
+                <div class="linearBox box1"></div>
+                <div class="linearBox box2"></div>
+                <div class="linearBox box3"></div>
+            </div>
+        </div>
+
+</body>
+</html>

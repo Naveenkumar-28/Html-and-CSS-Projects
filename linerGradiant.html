@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear-Geadient Flag Design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: aliceblue;
+        }
+        .container{
+            padding: 20px;
+           .flag{
+            width: 300px;
+            height: 250px;
+            margin-left: 20px;
+            display: inline-block;
+            div{
+                height: 200px;
+                width: 300px;
+               
+                border: 1px solid black;
+            }
+            p{
+                text-align: center;
+                padding: 10px 0;
+                font-weight: bold;
+                font-size: 20px;
+            }
+           }
+        }
+        .armenia{
+            background:linear-gradient(red 0% 33%,rgb(20, 33, 152) 33% 66%,rgb(233, 147, 8) 66% 100%);
+        }
+        .Belgium{
+            background: linear-gradient(to right,black 0% 33%,yellow 33% 66%,red 66% 100%);
+        }
+        .Canada{
+            background: linear-gradient(to right,red 0% 15%,white 15% 85%,red 85% 100%);
+        }
+        .Germany{
+            background: linear-gradient(black 0% 33%,red 33% 66%,rgb(217, 217, 29) 66% 100%);
+        }
+        .Italy{
+            background: linear-gradient(to right,rgb(5, 164, 5) 0% 33%,white 33% 66%,red 66% 100%);
+        }
+        .Japan{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                background-color: red;
+                height: 150px;
+                width: 150px;
+                border-radius:50% ;
+            }
+        }
+        .Netherlands{
+            background: linear-gradient(red 0% 33%,white 33% 66%,rgb(20, 33, 152) 66% 100%);
+        }
+        .Poland{
+            background:linear-gradient(white 0% 50%,red 50% 100%) ;
+        }
+        .Russia{
+            background: linear-gradient(white 0% 33%,rgb(20, 33, 152) 33% 66%,red 66% 100%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="flag">
+          <div class="armenia">
+
+          </div>
+          <p>Armenia</p>
+       </div>
+       <div class="flag">
+          <div class="Belgium">
+
+          </div>
+          <p>Belgium</p>
+       </div>
+      
+       <div class="flag">
+          <div class="Germany">
+
+          </div>
+          <p>Germany</p>
+       </div>
+       <div class="flag">
+          <div class="Italy">
+
+          </div>
+          <p>Italy</p>
+       </div>
+       <div class="flag">
+          <div class="Japan">
+            <p></p>
+          </div>
+          <p>Japan</p>
+       </div>
+       <div class="flag">
+          <div class="Netherlands">
+            
+          </div>
+          <p>Netherlands</p>
+       </div>
+       <div class="flag">
+        <div class="Poland">
+
+        </div>
+        <p>Poland</p>
+     </div>
+     <div class="flag">
+        <div class="Russia">
+
+        </div>
+        <p>Russia</p>
+     </div>
+    </div>
+</body>
+</html>
